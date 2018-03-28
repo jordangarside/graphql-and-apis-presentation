@@ -369,6 +369,9 @@ export default class Presentation extends React.Component {
           <Heading textColor="secondary">
             Questions?
           </Heading>
+          <Heading size={4} margin="30px 0 0"><Link textColor="primary" href="https://github.com/jordangarside/graphql-and-apis-presentation" target="_blank">GitHub</Link></Heading>
+          <Heading size={4} margin="30px 0 0"><Link textColor="primary" href="https://github.com/FormidableLabs/spectacle" target="_blank">Spectacle</Link></Heading>
+          <Heading size={4} margin="30px 0 0"><Link textColor="primary" href="https://surge.sh/" target="_blank">Surge</Link></Heading>
         </Slide>
       </Deck>
     );
