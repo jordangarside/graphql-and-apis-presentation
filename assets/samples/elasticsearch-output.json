@@ -1,0 +1,43 @@
+{
+	"took": 9,
+	"timed_out": false,
+	"_shards": { "total": 5, "successful": 5, "skipped": 0, "failed": 0 },
+	"hits": {
+		"total": 82,
+		"max_score": 7.344051,
+		"hits": [
+			{
+				"_index": "shakespeare",
+				"_type": "doc",
+				"_id": "37",
+				"_score": 7.344051,
+				"_source": {
+					"type": "line",
+					"line_id": 38,
+					"play_name": "Henry IV",
+					"speech_number": 2,
+					"line_number": "1.1.35",
+					"speaker": "WESTMORELAND",
+					"text_entry": "And many limits of the charge set down"
+				}
+			},
+			{
+				"_index": "shakespeare",
+				"_type": "doc",
+				"_id": "45",
+				"_score": 7.344051,
+				"_source": {
+					"type": "line",
+					"line_id": 46,
+					"play_name": "Henry IV",
+					"speech_number": 2,
+					"line_number": "1.1.43",
+					"speaker": "WESTMORELAND",
+					"text_entry":
+						"Upon whose dead corpse there was such misuse,"
+				}
+			},
+			...
+		]
+	}
+}

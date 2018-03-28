@@ -1,0 +1,33 @@
+import ApolloClient from "apollo-boost";
+import gql from "graphql-tag";
+import { ApolloProvider } from "react-apollo";
+import { graphql } from "react-apollo";
+
+const PureHeroesComponent = ({ data }) => (
+  <ul>{data.heroes.map(hero => <li>{hero.name}</li>)}</ul>
+);
+
+const withHeroesData = graphql(
+  gql`
+      query {
+        heroes {
+          name
+      }
+    `
+);
+
+const HeroesComponent = withHeroesData(PureHeroesComponent);
+
+const client = new ApolloClient({
+  uri: "https://graphql.org/swapi-graphql/"
+});
+
+const RootComponent = () => (
+  <ApolloProvider client={client}>
+    <HeroesComponent />
+  </ApolloProvider>
+);
+
+window.onload = () => {
+  render(<RootComponent />, document.getElementById("react-root"));
+};
