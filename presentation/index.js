@@ -63,6 +63,9 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit lineHeight={1} textColor="secondary">
             GraphQL and APIs
           </Heading>
+          <Text margin="30px 0 0" textColor="tertiary" size={1} fit bold>
+            https://graphql-and-apis-presentation.surge.sh
+          </Text>
         </Slide>
         <Slide transition={["fade"]} bgColor="primary" textColor="secondary">
           <Heading size={3} textColor="tertiary">
